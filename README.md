@@ -4,7 +4,7 @@
 ### 外交部网站
 https://www.fmprc.gov.cn/web/
 ### 安装方法
-1. Clone the repo.
+1. Clone the repo. (`zyxw` & `frhd` are only for demo purpose. You only need the two files: `package.json`, `main.ts`)
 2. `npm install`
 3. `npm start` 
     - 注意默认开启`crawlAllUnderCategory`.

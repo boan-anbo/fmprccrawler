@@ -149,13 +149,13 @@ async function crawlAllUnderCategory(baseUrl: string, folderName: string) {
 
 
 // Example crawling to the last
-const baseUrl = "https://www.fmprc.gov.cn/web/zyxw/"
-crawlToTheEnd(baseUrl, 1638506, "zyxw").catch((err) => {
-    throw err;
-})
+// const baseUrl = "https://www.fmprc.gov.cn/web/zyxw/"
+// crawlToTheEnd(baseUrl, 1638506, "zyxw").catch((err) => {
+//     throw err;
+// })
 
 
 // Example crawl all pages under the category
-// const baseUrl = "https://www.fmprc.gov.cn/web/zwbd_673032/fnhd_673048/"
-// crawlAllUnderCategory(baseUrl, "frhd").catch((err) => {throw err})
+const baseUrl = "https://www.fmprc.gov.cn/web/zwbd_673032/fnhd_673048/"
+crawlAllUnderCategory(baseUrl, "frhd").catch((err) => {throw err})
 
