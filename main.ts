@@ -11,9 +11,11 @@ const delay = (ms: number) => new Promise(res => {
 
 /**
  * Crawl from the starting id to 0.
- * @param baseUrl  The category path. Do NOT include 't*.shtml'. Put the id (the * part into the startingId parameter). e.g. For an article, https://www.fmprc.gov.cn/web/zyxw/t1638506.shtml, the base url is https://www.fmprc.gov.cn/web/zyxw/; the starting id is 1638506.
+ * @param baseUrl  The category path.
+ * Do NOT include 't*.shtml' part. Put the id (the * part) into the startingId parameter).
+ * E.g. For article, https://www.fmprc.gov.cn/web/zyxw/t1638506.shtml, the base url is https://www.fmprc.gov.cn/web/zyxw/; the starting id is 1638506.
  * @param startingId starting page id
- * @param folderName where to put the htmls
+ * @param folderName where to put the htmls.
  */
 async function crawlToTheEnd(baseUrl: string, startingId: number, folderName: string) {
     // how long to pause between pages, in ms.
@@ -63,7 +65,9 @@ async function crawlToTheEnd(baseUrl: string, startingId: number, folderName: st
 
 /**
  *
- * @param baseUrl The category path. Do NOT include 'default.shtml' e.g. https://www.fmprc.gov.cn/web/zwbd_673032/fnhd_673048/
+ * @param baseUrl The category path.
+ * Do NOT include 'default.shtml' part.
+ * e.g. https://www.fmprc.gov.cn/web/zwbd_673032/fnhd_673048/
  * @param folderName Where to put the htmls.
  */
 async function crawlAllUnderCategory(baseUrl: string, folderName: string) {
