@@ -1,0 +1,22 @@
+{
+  "name": "newscrawler",
+  "version": "1.0.0",
+  "description": "a crawler demo for 中国外交部网站",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node main.ts"
+  },
+  "keywords": [],
+  "author": "Bo An <bo.an@yale.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^5.3.1",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^3.0.2",
+    "@types/cheerio": "^0.22.22"
+  }
+}
